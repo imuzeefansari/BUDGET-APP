@@ -6,27 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic TO - DO </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
 </head>
 
 <body>
-    <h1 style="text-align: center; color: #fff; margin: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">My
-        To-Do List</h1>
+    <h1 style="text-align: center; color: #fff; margin: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Budget App</h1>
+        <div id="container0">
+            <h2>Budget</h2>
+            <input type="number" name="" id="setBudget" placeholder="Enter Total Budget">
+            <button id="setBudgetBtn" onclick="setBudget()">Set budget</button>
+        </div>
     <div id="container">
         <div id="newtask">
-            <input type="text" placeholder="Write here" id="input">
+            <div class="headings">
+                <div class="one">
+                <h4>Total Budget</h4>
+                <span id="TotalBudgetSpan">0</span>
+            </div>
+            <div class="two">
+                <h4>Total Expense</h4>
+                <span id="expenses">0</span>
+            </div>
+            <div class="three">
+                <h4>Remaining Balance</h4>
+                <span id="remBal">0</span>
+            </div>
+            </div>
+            <input type="text" placeholder="Enter Product" id="input">
+            <input type="number" placeholder="Enter Amount" id="amount">
             <button id="push" onclick="element()">Add</button>
+            <!-- <button id="amountBtn" onclick="element()">Add</button> -->
         </div>
         <div id="tasks">
-
+    <h4>Expense List</h4>
         </div>
     </div>
-
-
-  
 </body>
 
-<script src="project.js"></script>
+
 
 
 </html>
