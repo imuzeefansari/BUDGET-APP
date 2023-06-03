@@ -31,8 +31,12 @@ let trash = document.getElementsByClassName('delete');
 for (let i = 0; i < trash.length; i++) {
   trash[i].onclick = function () {
   this.parentNode.remove();
+ let output = nexExp - parseFloat(userAmount.value);
+ expensesSpan.textContent = output;
+ let remOutput = remainingBal + parseFloat(userAmount.value);
+ remainingBalSpan.textContent = remOutput;
   }
+// document.getElementById('input').value = '';
+// document.getElementById('amount').value = '';
 }
-document.getElementById('input').value = '';
-document.getElementById('amount').value = '';
 }
