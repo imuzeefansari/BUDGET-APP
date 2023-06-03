@@ -31,6 +31,8 @@ let trash = document.getElementsByClassName('delete');
 for (let i = 0; i < trash.length; i++) {
   trash[i].onclick = function () {
   this.parentNode.remove();
+  let expense = expensesSpan.innerText;
+  expense.innerText - remainingBalSpan.innerText;
   }
 }
 document.getElementById('input').value = '';
