@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic TO - DO </title>
+    <title>Budget App </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="project.css">
     <script src="project.js" defer></script>
@@ -34,10 +34,19 @@
                 <span id="remBal">0</span>
             </div>
             </div>
-            <input type="text" placeholder="Enter Product" id="input">
+            <select name="" id="categories">
+                <option value="categories">Categories</option>
+                <option value="Food & Resturant">Food & Resturant</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Rent">Rent</option>
+                <option value="Shopping & Clothing">Shopping & Clothing</option>
+                <option value="Vehicles">Vehicles</option>
+                <option value="Medical">Medical</option>
+            </select>
+            <input type="text" placeholder="Description" id="input">
             <input type="number" placeholder="Enter Amount" id="amount">
+            <input type="date" id="date">
             <button id="push" onclick="element()">Add</button>
-            <!-- <button id="amountBtn" onclick="element()">Add</button> -->
         </div>
         <div id="tasks">
     <h4>Expense List</h4>

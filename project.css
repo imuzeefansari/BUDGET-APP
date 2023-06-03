@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Verdana,Tahoma, sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -9,7 +10,6 @@ body {
   width: 570px;
   position: absolute;
   margin: auto;
-  /* top: 50px; */
   left: 0;
   right: 0;
   padding: 30px 0;
@@ -21,10 +21,11 @@ body {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  /* margin-top: 5x; */
 }
 #newtask input {
   border-radius: 5px;
-  width: 70%;
+  width: 40%;
   height: 45px;
   font-size: 15px;
   border: 2px solid #d1d3d4;
@@ -32,6 +33,30 @@ body {
   color: #111;
   font-weight: 500;
   position: relative;
+}
+#categories{
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  font-weight: 500;
+  position: relative;
+  background-color: teal;
+  color: white;
+}
+#date{
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  font-weight: 500;
+  position: relative;
+  background-color: teal;
+  color: white;
 }
 #newtask input:focus {
   outline: none;
@@ -54,10 +79,11 @@ body {
 #tasks {
   width: 100%;
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
   background: #fff;
   padding: 30px 20px;
   border-radius: 5px;
+  /* font-size: 16px; */
 }
 .task {
   background: #fff;
@@ -71,8 +97,8 @@ body {
   border-bottom: 2px solid #d1d3d4;
 }
 .task span {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: bolder;
   cursor: pointer;
 }
 .task button {
@@ -87,17 +113,6 @@ body {
 .completed {
   text-decoration: line-through;
   opacity: 0.7;
-}
-#tasks li {
-  color: #fff;
-  padding: 5px;
-  font-style: italic;
-  list-style: none;
-  background: #19a68c;
-  height: 30px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 #amount{
   margin-top: 20px;
@@ -147,4 +162,9 @@ body {
 .headings{
   display: flex;
   justify-content: space-around;
+}
+span{
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
